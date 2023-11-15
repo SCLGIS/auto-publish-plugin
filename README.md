@@ -6,24 +6,21 @@
   </a>
   <h1>Auto Publish Plugin</h1>
   <p>Webpack plugin that supports automatic publishing of NPM packages.</p>
-  <img src="http://hycoding.com/version-manage-plugin.png">
 </div>
 
 <h2 align="center">安装</h2>
 
-<h3>Webpack 5</h3>
-
 ```bash
-  npm i --save-dev auto-publish-plugin
+  npm i --save-dev @comkit/auto-publish-plugin
 ```
 
 ```bash
-  yarn add --dev auto-publish-plugin
+  yarn add --dev @comkit/auto-publish-plugin
 ```
 
 <h2 align="center">使用</h2>
 
-`auto-publish-plugin`可以更好的管理你的包版本，发布时通过调用`shell`获得远程最新的包版本号同时智能的指引你发布的包版本。
+`auto-publish-plugin`支持自动发布 npm 包。
 
 **webpack.config.js**
 
