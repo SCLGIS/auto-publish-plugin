@@ -1,0 +1,50 @@
+{
+  "name": "@comkit/auto-publish-plugin",
+  "version": "0.0.1",
+  "description": "Webpack plugin that supports automatic publishing of NPM packages.",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "Webpack",
+    "npm publish",
+    "auto publish plugin"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "rm": "rimraf ./dist",
+    "dev": "ts-node ./lib/index.ts",
+    "build-watch": "tsc --project ./tsconfig.json --watch",
+    "build-ts": "tsc --project ./tsconfig.json",
+    "build": "npm run rm && npm run build-ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SCLGIS/auto-publish-plugin.git"
+  },
+  "author": "ChenLay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SCLGIS/auto-publish-plugin/issues"
+  },
+  "homepage": "https://github.com/SCLGIS/auto-publish-plugin#readme",
+  "devDependencies": {
+    "@types/inquirer": "^8.1.3",
+    "@types/signale": "^1.4.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.1"
+  },
+  "dependencies": {
+    "schema-utils": "^4.0.0",
+    "execa": "^5.1.0",
+    "inquirer": "^8.2.0",
+    "ora": "^5.0.1",
+    "signale": "^1.4.0"
+  }
+}
